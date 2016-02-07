@@ -1,28 +1,34 @@
 # Preparando a Intel edison
 - Instale os pacotes necessários:
-  Caso os repositorios "não oficiais" não estejam configurados:
-  vi /etc/opkg/base-feeds.conf
+  
+  PS# Caso os repositorios "não oficiais" não estejam configurados:
+  $~ vi /etc/opkg/base-feeds.conf
   
   Adicione as seguintes linhas:
   src/gz core2-32 http://repo.opkg.net/edison/repo/core2-32
+  $~ opkg update
   
-  aperte 'Esc' , 'w', 'q' e então 'Enter'
   
-  Rode o seguinte comando no terminal:
+  $~ opkg install python
+  $~ opkg install python-pip
   
-  opkg install python
-  opkg install python-pip
+  $~pip install flask
   
-  pip install flask
+  $~ opkg install mjpg-streamer
+  $~ opkg install fswebcam
   
-  opkg install mjpg-streamer
-  opkg install fswebcam
-  
-  - Baixe a pasta Flask_example, a tranfira para o direorio /home/root de sua intel edison
-  - conecte a webcam na porta USB da Intel edison
-  - verifique qual é o endereço de IP da intel edison com o coman do:
-  configure-edison --showWiFiIP
+  - Baixe a pasta Flask_example, a transfira para o direorio /home/root de sua intel edison
+  - conecte a webcam na porta USB.
+  - verifique qual é o endereço de IP da intel edison com o comando:
+  $~ configure-edison --showWiFiIP
   
   navegue até a pasta cd/flask_example/templates
   altere o arquivo index.html e altere o IP da tag <img...
   vi index.html
+  
+  Volte até a pasta principal do projeto e rode o arquivo controle.py:
+  $~ python controle.py
+  
+  
+  _ Verificando o resultado
+  
