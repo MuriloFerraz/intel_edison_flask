@@ -27,7 +27,8 @@
   $~ opkg install mjpg-streamer
   $~ opkg install fswebcam
   
-  - Baixe a pasta Flask_example, a transfira para o direorio /home/root de sua intel edison
+  - Baixe a pasta "flask_example", a transfira para o direorio /home/root de sua intel edison utilizando
+    filezila.
   - conecte a webcam na porta USB.
   - verifique qual é o endereço de IP da intel edison com o comando:
   $~ configure-edison --showWiFiIP
