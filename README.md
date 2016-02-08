@@ -1,9 +1,7 @@
 # Exemplo de aplicação IoT com Intel Edison
 
-- Este exemplo demonstra a utilização do Flask, um microframework para desenvolvimento web
-  ideal para projetos rápidos onde não há tempo para desenvolvimento de aplicação cliente - servidor.
-  Também pode ser modificado para ser implementado em projetos grandiosos, como Automação residencial e sistemas de segurança,
-  mas sem perder a simplicidade e facilidade de programação.
+- Este exemplo demonstra a utilização do Flask, um microframework para Python que facilita e muito o desenvolimento de projetos de  Iot.
+- leia mais em: http://flask.pocoo.org/
 
 # Lista de Materiais:
 - Intel Edison w/ Arduino Expansion Board
