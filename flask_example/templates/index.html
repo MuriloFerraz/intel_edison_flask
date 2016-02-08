@@ -1,0 +1,46 @@
+<html>
+<title>Exemplo Flask</title>
+<body>
+	<div>
+		<img src="http://192.168.0.104:8080/?action=stream"/>
+	</div>
+	<div style="color: #000FFF">
+	<h3>	
+		{% with messages = get_flashed_messages() %}
+			{% if messages %}
+			<ul class=flashes>
+			{% for message in messages %}
+			<li>{{ message }}</li>
+			{% endfor %}	
+		</ul>
+		{% endif %}
+		{% endwith %}
+	</h3>	
+	</div>
+
+<form action="/controle" method="post">
+<table>
+<tr>
+<td><input type="submit" name="buttonPress" value="Red_On" size="100" style="color: #FF0000; height: 60px; width: 100px; font-weight: bold; "></td>
+<td><input type="submit" name="buttonPress" value="Yellow_On" size="100" style="color: #909000; height: 60px; width: 100px; font-weight: bold; "></td>
+<td><input type="submit" name="buttonPress" value="Green_On" size="100" style="color: #00FF00; height: 60px; width: 100px; font-weight: bold; "></td>
+<td><input type="submit" name="buttonPress" value="Snap" size="100" style="color: #0000FF; height: 60px; width: 100px; font-weight: bold; "></td>
+</tr>
+<tr>
+<td><input type="submit" name="buttonPress" value="Red_Off" size="100" style="color: #600000; height: 60px; width: 100px; font-weight: bold; "></td>
+<td><input type="submit" name="buttonPress" value="Yellow_Off" size="100" style="color: #406000; height: 60px; width: 100px; font-weight: bold; "></td>
+<td><input type="submit" name="buttonPress" value="Green_Off" size="100" style="color: #004000; height: 60px; width: 100px; font-weight: bold; "></td>
+<td><input type="submit" name="buttonPress" value="Sensor" size="100" style="color: #0000FF; height: 60px; width: 100px; font-weight: bold; "></td>
+</tr>
+</table>
+	
+</form>
+</body>	
+
+<footer style="font-size:10px";>
+			
+		CC BY 4.0 - Feb 2016 - Murilo Ferraz - @muriloferraz125
+		
+</footer>
+</html>
+</html>
