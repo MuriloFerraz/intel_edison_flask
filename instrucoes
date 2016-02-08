@@ -1,3 +1,11 @@
+# Montando o circuito:
+- conecte:
+- LED Vermelho -> Pino 2;
+- LED Verde -> Pino 3;
+- LED Amarelo -> pino 4;
+- Utilize os resistores :)
+
+
 # Preparando a Intel edison
 - Instale os pacotes necessários:
   
@@ -6,9 +14,11 @@
   
   Adicione as seguintes linhas:
   src/gz core2-32 http://repo.opkg.net/edison/repo/core2-32
+  
+  salve o arquivo e então rode o comando:
   $~ opkg update
   
-  
+  continuando...
   $~ opkg install python
   $~ opkg install python-pip
   
@@ -24,11 +34,17 @@
   
   navegue até a pasta cd/flask_example/templates
   altere o arquivo index.html e altere o IP da tag <img...
-  vi index.html
+  $~ vi index.html
   
   Volte até a pasta principal do projeto e rode o arquivo controle.py:
   $~ python controle.py
   
   
-  _ Verificando o resultado
+  # Verificando o resultado
+  - Abra um navegador do computador, tablet ou celular conectado na mesma reder, digite o endereço de IP observado
+    comforme o exemplo:
+    192.168.0.104:800
+    
+    Não se esqueça do ":800" :)
+  
   
